@@ -4,6 +4,11 @@
 
 ### Part of the submission for the Github Project
 
+### Local versions of the software and packages used for developing the project's Question 1 before moving to jupyter:
+* R version 4.0.4
+* RStudio version 1.2.1335
+* tidyverse version 1.3.0
+
 ### Files used for this exercise:
 *chicago.csv
 *new-york-city.csv 
