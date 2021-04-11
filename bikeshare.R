@@ -35,14 +35,14 @@ dat.Q1.combined %>%
   filter(Gender == 'Male' | Gender == 'Female') %>%
   filter(Birth.Year > 1920) %>%  
   na.omit() %>%
-  ggplot(aes(x=Age)) +
-  geom_histogram(aes(y=..density..), binwidth = 1, colour="black", fill="white", na.rm=TRUE) +
-  geom_density(alpha=.2, fill="lightpink") +
-  coord_cartesian(xlim = c(0, 100)) +
+  ggplot(aes(x=Birth.Year)) +
+  geom_histogram(aes(), binwidth = 1, colour="black", fill="white", na.rm=TRUE) +
+  #geom_density(alpha=.2, fill="lightpink") +
+  #coord_cartesian(xlim = c(1920, 2020)) +
   facet_grid(Gender ~ City) +
-  labs(x = "Approximate Age (Years)",
-       y = "Density",
-       subtitle = "The approximate age distributions of Bikeshare users born after 1920",
+  labs(x = "Birth Year",
+       y = "Count",
+       subtitle = "Birth year of Bikeshare users born after 1920",
        caption = "Data source: Udacity Bikeshare dataset") +
   theme_bw()
 
