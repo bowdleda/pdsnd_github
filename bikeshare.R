@@ -1,6 +1,3 @@
-# The Git instructions require the student submit a Python file, but see
-# https://knowledge.udacity.com/questions/503632 & https://knowledge.udacity.com/questions/255036 for support
-# for submitting a .R file instead.
 # This script was my submission for question 1.
 
 setwd("C:/Users/BOWDLE/Documents/Udacity/udacity-git-course/pdsnd_github")
@@ -38,14 +35,14 @@ dat.Q1.combined %>%
   filter(Gender == 'Male' | Gender == 'Female') %>%
   filter(Birth.Year > 1920) %>%  
   na.omit() %>%
-  ggplot(aes(x=Age)) +
-  geom_histogram(aes(y=..density..), binwidth = 1, colour="black", fill="white", na.rm=TRUE) +
-  geom_density(alpha=.2, fill="lightpink") +
-  coord_cartesian(xlim = c(0, 100)) +
-  facet_grid(City ~ Gender) +
-  labs(x = "Approximate Age (Years)",
-       y = "Density",
-       subtitle = "The approximate age distributions of Bikeshare users born after 1920",
+  ggplot(aes(x=Birth.Year)) +
+  geom_histogram(aes(), binwidth = 1, colour="black", fill="white", na.rm=TRUE) +
+  #geom_density(alpha=.2, fill="lightpink") +
+  #coord_cartesian(xlim = c(1920, 2020)) +
+  facet_grid(Gender ~ City) +
+  labs(x = "Birth Year",
+       y = "Count",
+       subtitle = "Birth year of Bikeshare users born after 1920",
        caption = "Data source: Udacity Bikeshare dataset") +
   theme_bw()
 
