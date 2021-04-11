@@ -6,7 +6,8 @@
 
 ### Part of the submission for the Github Project
 
-### Files used
-Include the files used
+### Files used for this exercise:
+*chicago.csv
+*new-york-city.csv 
 
 ### Source repository: https://github.com/udacity/pdsnd_github
